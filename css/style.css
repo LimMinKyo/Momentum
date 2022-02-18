@@ -1,3 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 0;
+  background: inherit;
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  position: relative;
+}
+.center_space {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+}
+#login_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#greeting {
+  font-size: 48px;
+}
+.button {
+  font-weight: 600;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  color: whitesmoke;
+}
+form > input {
+  width: 280px;
+  border: 2px solid #aaa;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 20px 0;
+  background-color: whitesmoke;
+  font-size: 1.2rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+form > input:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+/* todo_list */
+#todo_list li {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#todo_list span {
+  font-size: 18px;
+  text-align: right;
+}
+#todo_list button {
+  margin-left: 5px;
+  cursor: pointer;
+}
+#clock {
+  font-size: 7rem;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+/* quote */
+#quote {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
+.quote_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#quote span {
+  margin: auto;
+}
+/* weather */
+#weather {
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 .hidden {
   display: none;
 }
